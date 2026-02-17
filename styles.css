@@ -1,0 +1,89 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+
+header {
+    background: linear-gradient(135deg, #2e1a47, #4b2c73, #6a3fbf);
+    background-size: 400% 400%; 
+    animation: gradientShift 10s ease infinite;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    position: relative; 
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+header h2 {
+    margin-top: 10px;
+    color: #6f4db2;
+    transform: translateY(-15px);
+    opacity: 0;
+    transition: opacity 1s ease 0.5s, transform 1s ease 0.5s; /
+}
+
+
+section {
+    background-color: white;
+    width: 85%;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(96, 32, 34, 0.05);
+}
+
+/* LÍNEA DECORATIVA ANIMADA */
+header::after {
+    content: "";
+    display: block;
+    width: 0; 
+    height: 4px; 
+    margin: 10px auto 0;
+    background-color: #6a3fbf; 
+    border-radius: 2px;
+    transition: width 1s ease-in-out; 
+}
+
+/* Clase que activa la animación */
+header.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+header.loaded h2 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+header.loaded::after {
+    width: 280px; 
+    height: 2px;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.sobre-mi-img {
+    display: block;        /* hace que se comporte como bloque */
+    margin: 15px auto;     /* centra la imagen y deja espacio arriba y abajo */
+    width: 120px;          /* ancho deseado, más pequeño */
+    height: auto;          /* mantiene proporción */
+    border-radius: 10px;   /* opcional: bordes redondeados */
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2); /* opcional: sombra sutil */
+}
