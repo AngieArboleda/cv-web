@@ -20,10 +20,9 @@ Incluye secciones de “Sobre mí”, formación académica, habilidades técnic
 - **Sobre mí**: Foto pequeña y descripción personal.  
 - **Formación Académica**: Estudios y materias cursadas.  
 - **Habilidades Técnicas**: Conocimientos en HTML, CSS, JavaScript y SQL.  
-- **Proyectos**: Ejemplo de CV web personal.  
+- **Proyectos**: Ejemplo de mi CV web personal.  
 - **Objetivo Profesional**: Objetivos y aspiraciones en tecnología.  
 - **Contacto**: Email y perfil de LinkedIn.
 
 ## Notas adicionales
-- Todos los archivos del proyecto (HTML, CSS e imagen) se encuentran en esta carpeta o sus subcarpetas (`imagenes/`).  
-- Este proyecto es ideal para mostrar como **primer proyecto web personal** en un portafolio profesional.x
+- Todos los archivos de este proyecto (HTML, CSS e imagen) se encuentran en esta carpeta o sus subcarpetas (`imagenes/`).  
